@@ -1,0 +1,5 @@
+hosts: kubernetes_master
+  become: true
+
+  roles:
+    - role: k8s-aws-master-node

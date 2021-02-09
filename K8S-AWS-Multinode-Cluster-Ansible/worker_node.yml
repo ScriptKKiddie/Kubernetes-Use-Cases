@@ -1,0 +1,5 @@
+hosts: kubernetes_worker_nodes
+  become: true
+
+  roles:
+    - role: k8s-aws-worker-node

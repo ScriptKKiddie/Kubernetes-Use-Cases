@@ -1,0 +1,11 @@
+hosts: kubernetes_master
+  become: true
+
+  roles:
+    - role: k8s-aws-master-node
+
+hosts: kubernetes_worker_nodes
+  become: true
+
+  roles:
+    - role: k8s-aws-worker-node
